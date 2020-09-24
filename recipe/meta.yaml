@@ -34,6 +34,7 @@ requirements:
     - r-base
     - r-r.cache
     - r-rcpp
+    - r-rdpack
     - r-ape >=5.0
     - r-bit64
     - r-colorspace
@@ -43,6 +44,7 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-r.cache
     - r-rcpp
+    - r-rdpack
     - r-ape >=5.0
     - r-bit64
     - r-colorspace
