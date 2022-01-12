@@ -15,7 +15,6 @@ source:
 build:
   merge_build_host: true  # [win]
   number: 0
-  skip: true  # [r_base == "3.6" and win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,25 +30,28 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-r.cache
     - r-rcpp
-    - r-rdpack
-    - r-ape >=5.0
+    - r-rdpack >=0.7
+    - r-ape >=5.6
     - r-bit64
     - r-colorspace
-    - r-phangorn >=2.2.1
+    - r-fastmatch >=1.1.3
+    - r-lifecycle
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-r.cache
     - r-rcpp
-    - r-rdpack
-    - r-ape >=5.0
+    - r-rdpack >=0.7
+    - r-ape >=5.6
     - r-bit64
     - r-colorspace
-    - r-phangorn >=2.2.1
+    - r-fastmatch >=1.1.3
+    - r-lifecycle
 
 test:
   commands:
