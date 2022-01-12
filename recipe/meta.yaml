@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TreeTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TreeTools/TreeTools_{{ version }}.tar.gz
-  sha256: 24127619cd5b0e7b73735aa96295481ceb6cc2cfcfd7a379af437f812c4eb4a7
+  sha256: 52963767546fb7cccf18b1767a0749bc729ea7b4a1ed8fce40636697b213d828
 
 build:
   merge_build_host: true  # [win]
   number: 0
-  skip: true  # [r_base == "3.6" and win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,25 +30,28 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-r.cache
     - r-rcpp
-    - r-rdpack
-    - r-ape >=5.0
+    - r-rdpack >=0.7
+    - r-ape >=5.6
     - r-bit64
     - r-colorspace
-    - r-phangorn >=2.2.1
+    - r-fastmatch >=1.1.3
+    - r-lifecycle
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-r.cache
     - r-rcpp
-    - r-rdpack
-    - r-ape >=5.0
+    - r-rdpack >=0.7
+    - r-ape >=5.6
     - r-bit64
     - r-colorspace
-    - r-phangorn >=2.2.1
+    - r-fastmatch >=1.1.3
+    - r-lifecycle
 
 test:
   commands:
