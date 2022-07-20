@@ -1,4 +1,4 @@
-{% set version = "1.7.2" %}
+{% set version = "1.7.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TreeTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TreeTools/TreeTools_{{ version }}.tar.gz
-  sha256: 24960f2045ff30fe824158b035524b7a20f19c742d509d70b6c07e35b6165faf
+  sha256: 54fbf99d22d02f9d349259af84980f12487d346771009eb8f0336ae5ef6897a4
 
 build:
   merge_build_host: true  # [win]
