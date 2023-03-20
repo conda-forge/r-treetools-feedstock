@@ -1,11 +1,22 @@
+About r-treetools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-treetools-feedstock/blob/main/LICENSE.txt)
+
 About r-treetools
-=================
+-----------------
 
 Home: https://ms609.github.io/TreeTools/, https://github.com/ms609/TreeTools/
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-treetools-feedstock/blob/main/LICENSE.txt)
+Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; rooting of trees and extraction of subtrees; calculation and depiction of node support; calculation of ancestor-descendant relationships; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <http://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
+About r-treetools
+-----------------
+
+Home: https://ms609.github.io/TreeTools/, https://github.com/ms609/TreeTools/
+
+Package license: GPL-3.0-or-later
 
 Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; rooting of trees and extraction of subtrees; calculation and depiction of node support; calculation of ancestor-descendant relationships; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <http://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
 
