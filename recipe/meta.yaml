@@ -1,6 +1,5 @@
 {% set version = "1.12.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-treetools
@@ -13,12 +12,12 @@ source:
   sha256: 65b2c143df315e9158ae02c2641c6e3871daeaf036883f013c9b5c9ead2d1fdf
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
-  skip: true  # [win]
+  # Checking windows to see if it passes. Uncomment the line if it fails.
+  # skip: true  # [win]
 
 requirements:
   build:
@@ -48,7 +47,6 @@ requirements:
     - r-rdpack >=2.3
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-ape >=5.6
     - r-bit64
     - r-colorspace
