@@ -1,4 +1,4 @@
-{% set version = "1.16.1" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TreeTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TreeTools/TreeTools_{{ version }}.tar.gz
-  sha256: e9162efae6d6f691ccee5f6dbb988fd45edcc4b017f1ba01e08163019d88a433
+  sha256: b50f59c522364a995548743001e794680f9a1607f34c07ebbb308c6a82d23848
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
