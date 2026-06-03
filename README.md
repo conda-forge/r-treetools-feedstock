@@ -11,7 +11,7 @@ Home: https://ms609.github.io/TreeTools/
 
 Package license: GPL-3.0-or-later
 
-Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; rooting of trees and extraction of subtrees; calculation and depiction of node support; calculation of ancestor-descendant relationships; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <http://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
+Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; tree rearrangement; analysis of tree shape; rooting of trees and extraction of subtrees; calculation and depiction of split support; plotting the position of rogue taxa (Klopfstein & Spasojevic 2019) <doi:10.1371/journal.pone.0212942>; calculation of ancestor-descendant relationships, of 'stemwardness' (Asher & Smith, 2022) <doi:10.1093/sysbio/syab072>, and of tree balance (Mir et al. 2013, Lemant et al. 2022) <doi:10.1016/j.mbs.2012.10.005>, <doi:10.1093/sysbio/syac027>; artificial extinction (Asher & Smith, 2022) <doi:10.1093/sysbio/syab072>; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <https://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
 
 Development: https://github.com/ms609/TreeTools/
 
@@ -22,7 +22,7 @@ Home: https://ms609.github.io/TreeTools/
 
 Package license: GPL-3.0-or-later
 
-Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; rooting of trees and extraction of subtrees; calculation and depiction of node support; calculation of ancestor-descendant relationships; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <http://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
+Summary: Efficient implementations of functions for the creation, modification and analysis of phylogenetic trees. Applications include: generation of trees with specified shapes; tree rearrangement; analysis of tree shape; rooting of trees and extraction of subtrees; calculation and depiction of split support; plotting the position of rogue taxa (Klopfstein & Spasojevic 2019) <doi:10.1371/journal.pone.0212942>; calculation of ancestor-descendant relationships, of 'stemwardness' (Asher & Smith, 2022) <doi:10.1093/sysbio/syab072>, and of tree balance (Mir et al. 2013, Lemant et al. 2022) <doi:10.1016/j.mbs.2012.10.005>, <doi:10.1093/sysbio/syac027>; artificial extinction (Asher & Smith, 2022) <doi:10.1093/sysbio/syab072>; import and export of trees from Newick, Nexus (Maddison et al. 1997) <doi:10.1093/sysbio/46.4.590>, and TNT <https://www.lillo.org.ar/phylogeny/tnt/> formats; and analysis of splits and cladistic information.
 
 Development: https://github.com/ms609/TreeTools/
 
@@ -30,7 +30,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/r-treetools-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-treetools-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -44,20 +51,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10695&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-treetools-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10695&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-treetools-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10695&branchName=main">
